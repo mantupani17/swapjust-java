@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Image Upload</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../jquery-3.1.1.min.js"></script>
+        <script lang="javascript" type="text/javascript">
+            function getData()
+            {
+                
+                $.ajax({
+                    url:"../JSP/viewDataonCombo.jsp",
+                    //data:param,
+                    success:showAlert,
+                    catch:false
+                });
+            }
+            function showAlert(data)
+            {
+                document.getElementById("x").innerHTML=data;
+            }
+            function  showData()
+            {
+                alert(document.getElementById("vc").value);
+            }
+        </script>
+    </head>
+    <body onload="getData();">
+        <div>Image Upload</div>
+        <form name="uploadform" action="/HsyEcom/FileUploadServer" method="post" enctype="multipart/form-data">
+        <table border="2" width="600px">
+            <tr><td><div  id="x"></div></td></tr>
+            <tr><td><input type="file" name="file" /></td></tr>
+            <tr><td><input type="file" name="image2" /></td></tr>
+            <tr><td><input type="file" name="image3" /></td></tr>
+            <tr><td><input type="file" name="image4" /></td></tr>
+            <tr><td><input type="file" name="image5" /></td></tr>
+        </table>
+        <input type="submit" value="Click" name="fileupload"/>
+        </form>
+    </body>
+</html>

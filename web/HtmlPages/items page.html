@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>items</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+        <link rel="shortcut icon" href="../logo/logo.jpg" />
+        <link rel="stylesheet" href="../w3css/w3css.css" />
+        <link rel="stylesheet" href="../bootstrap-3.3.7/dist/css/bootstrap.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link rel="stylesheet" href="../icons/font-awesome-4.7.0/css/font-awesome.min.css" />
+<!--<link href="jquery.bxslider.css"/>-->
+<link rel="stylesheet" href="../o/docs/assets/css/docs.theme.min.css">
+<link rel="stylesheet" href="../o/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="../o/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+<script src="../o/docs/assets/vendors/jquery.min.js"></script>
+<script src="../o/docs/assets/owlcarousel/owl.carousel.js"></script>
+<script type="text/javascript" src="../bxslider/jquery.bxslider.js"></script>
+<script type="text/javascript" src="../bootstrap-3.3.7\dist\js\bootstrap.min.js" >
+</script>
+<link href="JSP/header.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50" style="">
+       <!-- <div class="container-fluid" style=" background-image:url(banners/fb.jpg); background-repeat:no-repeat; background-size:100% 100%; color:#fff;height:150px; margin-top:1px;">
+</div>
+-->
+<nav class="navbar navbar-inverse vs " data-spy="affix" data-offset-top="50">
+  <ul class="w3-navbar w3-deep-orange w3-border">
+
+      <li><a href="#"  class="w3-hover-deep-orange"><img src="logo/logo10-12.png" width="80px" height="35px" /></a></li>
+  <li>        <a href="#items" class="btn btn-info btn-lg w3-deep-orange  w3-padding-6 w3-hover-deep-orange w3-hide-small w3-threequarter" style="border:none; color:#fff; margin-top:7%;">
+          <span class="glyphicon glyphicon-align-justify"></span>  Items
+        </a></li>
+   <li class="w3-dropdown-click" style="margin-top:.7%" >
+      <a class=" w3-deep-orange w3-hide-small" style=" color:#fff;" href="#lang">Language <i class="fa fa-caret-down"></i></a>
+      <div class="w3-dropdown-content w3-card-4" style="margin-top:.8%">
+        <a href="#">Language</a>
+        <a href="#">Language</a>
+        <a href="#">Language</a>
+      </div>
+  <li style="width:30%; margin-top:.5%;">   <input type="text" class="w3-input w3-orange w3-padding-6 w3-hide-small" placeholder="Search.."  style="width:100%;"></li>
+    <li style="margin-top:.5%;"><button class="w3-btn w3-black w3-padding-6 w3-hover-orange w3-hide-small" style="color:#fff;">Search</button></li>
+	<li ><a href="#bas"  style="position:relative; z-index:3;" class="w3-text-white w3-hover-deep-orange w3-hide-small">bascket<img src="trolly/bs.png" class="" width="35px"/><span class="w3-badge w3-small w3-orange" style="z-index:2; position:absolute; margin-left:-18%; margin-top:.2%;">5</span></a></li>
+	 <li id="mr"><a class="w3-hide-small w3-hover-deep-orange" style="cursor:pointer;">
+          <i class="material-icons w3-padding-6 w3-hide-small" style="color:#fff; font-size:40px; margin-top:2px;"  onclick="document.getElementById('log').style.display='block'" >account_circle</i></a>
+       </li>
+	<!--login or sinup form-->
+  <div id="log" class="w3-modal">
+    <div class="w3-modal-content w3-card-8 w3-animate-top" style="max-width:550px">
+	        <span onclick="document.getElementById('log').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-8 w3-display-topright" title="Close Modal">&times;</span>
+	 <form class="w3-container" action="">
+        <div class="w3-section">
+          <label style="color:#000;"><b>Phone Number</b></label>
+          <input class="w3-input  w3-margin-bottom" type="text" placeholder="Enter Phone Number" pattern="[0-9]{10}" style="color:#666666;" name="usrname" required>
+		  <button onclick="" class="w3-deep-orange w3-border-0  w3-padding w3-margin-bottom">Get O T P</button><br />
+          <label style="color:#000;"><b>Verify OT P</b></label>
+          <input class="w3-input" type="text" placeholder="Enter O T P" name="psw" style="color:#666666;" pattern="[0-9]{5}" required>
+          <input class="w3-check" type="checkbox" checked="checked" ><label style="color:#000000"> Agreed Terms & Condition</label>
+        </div>
+      </form>
+	  <form class="w3-container" action="">
+	  <input type="text" class="w3-input" placeholder="Enter Phone Number or email" style="color:#000;" required /><br>
+	  <input type="password" class="w3-input w3-margin-bottom" placeholder="Enter Password" style="color:#000;" required />
+	       <button class="w3-btn-block w3-deep-orange w3-section w3-padding" type="submit">Login</button>
+	  </form>
+	   <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('log').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#" style="color:#000000;">password</a></span>
+      </div>
+
+    </div>
+  </div>
+	   <li id="mr"><a href="#" class="w3-hide-small w3-hover-deep-orange"><div class="material-icons w3-hide-small" style="font-size:24px;color:#ffffff; margin-top:4%;">call</div><span style="font-size:1.5em; color:#fff;">+91 9861766666</span></a></li>
+	   
+  </ul></nav>
+     <!--sidebar-->
+     <div class="w3-row">
+     <div class="w3-card-1 w3-threequarter" style="width:220px; margin-left: .5%;">
+     <div class=" w3-card-2" style="">
+         <div class="" style="width: 220px;  cursor: pointer;" onclick="myFunction('brands')" >Brands<i class="fa fa-angle-down" onclick="myFunction('brands')"  style="font-size:24px; margin-left: 150px;"></i>
+     </div>
+     <div id="brands" class="w3-hide w3-container ">
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Muscleblaze</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">British Nutrition</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">NPN</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Six Pack Nutrition</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Body Fluez</label>
+    </div>
+         <div class="" id="ty" style="width: 220px; cursor: pointer; " onclick="myFunction('types')">Types<i class="fa fa-angle-down" style="font-size:24px; margin-left: 156px;" onclick="myFunction('types')"></i>
+     </div>
+     <div id="types" class="w3-hide w3-container ">
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Mass Gainer</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Glutamine</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Creatine</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Whey Protein</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Pre workout</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Fat Burner</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Shaker</label>
+    </div>
+    <div class="" id="ty" style="width: 220px; cursor: pointer; " onclick="myFunction('size')">Size<i class="fa fa-angle-down" style="font-size:24px; margin-left: 168px;" onclick="myFunction('size')"></i>
+     </div>
+     <div id="size" class="w3-hide w3-container ">
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">1 Kg or 2.2 Lbs</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">2 Kg or 4.4 lbs</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">3 Kg or 6.6 Lbs</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">4 Kg or 8.8 Lbs</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">5 Kg or 11 Lbs</label><br>
+    </div>
+         <div>
+             <table style="border: none; color: transparent;">
+                 <tr>
+                     <td colspan="2">
+                         <label style="font-size: 15px;"><b>Range Sort</b></label>
+                     </td>
+                 </tr>
+                 <tr style="background-color: white;">
+                     <td>
+                         <input type="input" class="w3-input" style="width:70px;"/>
+                     </td>
+                     <td>
+                         To
+                     </td>
+                     <td >
+                         <input type="input" class="w3-input" style="width: 70px;"/>
+                     </td>
+                 </tr>
+             </table>
+         </div>
+         <div class="" id="ty" style="width: 220px; cursor: pointer; " onclick="myFunction('flv')">Flavors<i class="fa fa-angle-down" style="font-size:24px; margin-left: 145px;" onclick="myFunction('flv')"></i>
+     </div>
+     <div id="flv" class="w3-hide w3-container ">
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Chocolate</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Vanilla</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Strawberry</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">French Vanilla</label><br>
+<input class="w3-check" type="checkbox" checked="checked">  <label class="w3-validate">Banana</label><br>
+    </div>
+    </div>
+     </div>
+     </div>
+        <script type="text/javascript">
+            var fixmeTop=$('.fixme').offset().top ;
+          
+            $(window).scroll(function(){
+                var currentScrool =$(window).scrollTop();
+                if(currentScrool>=fixmeTop)
+                    {
+                        $('.fixme').css
+                        ({
+                            position :'fixed',
+                            top:67,
+                            left:2,
+                            width:220
+                        });
+                    }
+                    else
+                        {
+                            $('fixme').css
+                            ({
+                                position:'static'
+                            });
+                        }
+            }
+        );
+            
+        </script>
+        
+        
+       <script type="text/javascript">
+            function myFunction(id) {
+                 var x = document.getElementById(id);
+                    if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                    x.previousElementSibling.className += " w3-deep-orange";
+                }
+                else { 
+                  
+                     x.className = x.className.replace(" w3-show", "");
+                     x.previousElementSibling.className = 
+                     x.previousElementSibling.className.replace(" w3-green", "");
+                }
+                }
+</script>       
+    </body>
+</html>

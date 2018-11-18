@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Image Upload</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../w3css/w3css.css" />
+        <link rel="shortcut icon" href="../logo/logo.jpg" />
+        <script src="../jquery-3.1.1.min.js"></script>
+        <script lang="javascript" type="text/javascript">
+            function getData()
+            {
+                
+                $.ajax({
+                    url:"viewDataonCombo.jsp",
+                    //data:param,
+                    success:showAlert,
+                    catch:false
+                });
+            }
+            function showAlert(data)
+            {
+                document.getElementById("x").innerHTML=data;
+            }
+            function  showData()
+            {
+                alert(document.getElementById("vc").value);
+            }
+            function getOnData()
+            {
+                var e = document.getElementById("vc");
+                var value = e.options[e.selectedIndex].value;
+                document.getElementById("prod_code").value = value;
+                //alert(value);
+            }
+        </script>
+    </head>
+    <body onload="getData();">
+        <div class="w3-bar w3-black">
+            <div class="w3-bar-item w3-allerta w3-xlarge">Product Entry Page</div>
+        </div><br/>
+        <div class="w3-large w3-black" style="margin-left: 0">Image Uploading</div>
+        <form name="uploadform" action="fileUploadController.jsp" method="post" enctype="multipart/form-data">
+        <table  width="auto" align="center">
+            <tr><td><div  id="x"></div></td><td><input type="text" name="prod_code" id="prod_code" /></td></tr>
+            <tr><td colspan="2"><input type="file" name="file" /></td></tr>
+            <tr><td colspan="2"><input type="file" name="image2" /></td></tr>
+            <tr><td colspan="2"><input type="file" name="image3" /></td></tr>
+            <tr><td colspan="2"><input type="file" name="image4" /></td></tr>
+            <tr><td colspan="2" align="center"><input type="submit" value="Upload" name="fileupload"/></td></tr>
+        </table>
+        
+        </form>
+    </body>
+</html>

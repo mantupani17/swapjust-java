@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script type="text/javascript">
+            function validate(){
+                var name=document.frm.name.value;
+                if(name.indexOf("A")==0){
+                    alert(name);
+                }
+            }
+        </script>
+    </head>
+    <body >
+        <form id="frm" action="">
+            Enter name:<input type="text" name="username" onblur="validate()"/>
+            Enter e-Mail:<input type="text" name="email" onblur=""/>
+            <input type="submit" onclick="check()"/>
+        </form>
+        <SCRIPT LANGUAGE="JavaScript">
+        
+        function validate()
+        {
+            var name = document.getElementById('frm').username.value;
+            if(name.indexOf("A") == 0){
+                alert(name);
+                        document.getElementById('frm').email.focus();
+             }else{
+                document.getElementById('frm').username.focus();
+            }
+        }
+        function check()
+        {
+            var name = document.getElementById('frm').username.value;
+            if(name.indexOf("A") == 0){
+             }else{
+                alert("Please enter a name starting with 'A'");
+                     document.getElementById('frm').username.focus();
+            }
+        }
+        
+        </SCRIPT>
+    </body>
+</html>

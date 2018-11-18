@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="HygoShoppingMart">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="servlet3.1-jsp2.3-api.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/servlet3.1-jsp2.3-api/servlet3.1-jsp2.3-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="glassfish-jspparser-4.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/glassfish-jspparser-4.0/glassfish-jspparser-4.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-collections/commons-collections">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xalan.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/xalan/xalan">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="testng-6.8.1-dist.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/testng-6.8.1-dist/testng-6.8.1-dist">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-digester.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-digester/commons-digester">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-beanutils.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-beanutils/commons-beanutils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="crimson-1.1.3.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/crimson-1.1.3/crimson-1.1.3">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ant-launcher.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/ant-launcher/ant-launcher">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-logging/commons-logging">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ant.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/ant/ant">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-fileupload-1.3.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-fileupload-1.3/commons-fileupload-1.3">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="saxon-9.1.0.8.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/saxon-9.1.0.8/saxon-9.1.0.8">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="HygoShoppingMart"/>
+        <property name="java-output-path" value="/HygoShoppingMart/build/classes"/>
+    </wb-module>
+</project-modules>

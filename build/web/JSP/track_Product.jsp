@@ -1,0 +1,81 @@
+<%-- 
+    Document   : track_Product
+    Created on : Apr 29, 2017, 9:02:44 PM
+    Author     : mantu
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Track Product</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+        <link rel="shortcut icon" href="../logo/logo.jpg" />
+        <link rel="stylesheet" href="../w3css/w3css.css" />
+        <link rel="stylesheet" href="../bootstrap-3.3.7/dist/css/bootstrap.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link rel="stylesheet" href="../icons/font-awesome-4.7.0/css/font-awesome.min.css" />
+<link href="jquery.bxslider.css"/>
+<link rel="stylesheet" href="../o/docs/assets/css/docs.theme.min.css">
+<link rel="stylesheet" href="../o/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="../o/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+<script src="../o/docs/assets/vendors/jquery.min.js"></script>
+<script src="../o/docs/assets/owlcarousel/owl.carousel.js"></script>
+<script type="text/javascript" src="../bxslider/jquery.bxslider.js"></script>
+<script type="text/javascript" src="../bootstrap-3.3.7/dist/js/bootstrap.min.js" >
+</script>
+<link href="JSP/header.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="w3-centered">
+            <table class="w3-table" style="width: 50%; margin-left: 250px; border: none;s">
+                <tr>
+                    <td class="w3-right">
+                        <label><b>Order Id :</b></label>
+                    </td>
+                    <td>
+                        <input type="text" class="w3-input" placeholder="Order Id" />
+                    </td>
+                    <td class="w3-left"><input type="Button" class="w3-button w3-green w3-large" value="Tack"/></td>
+                </tr>
+                      
+        </table>
+        </div>
+                   
+        <table class="w3-table w3-centered" style="border: none;">
+                            <tr>
+                                <td class="w3-centered">
+                                    <b>Order Id</b>
+                                </td>
+                                <td class="w3-centered">
+                                    <b>Source</b>
+                                </td>
+                                <td class="w3-centered">
+                                    <b>Dispatch</b>
+                                </td>
+                                <td class="w3-centered">
+                                    <b>Arrived</b>
+                                </td>
+                            </tr>
+                                <tr>
+                                <td class="w3-centered">
+                                    ABS125164
+                                </td>
+                                <td class="w3-centered">
+                                    Brhm
+                                </td>
+                                <td class="w3-centered">
+                                    Bbsr
+                                </td>
+                                <td class="w3-centered">
+                                    Cuttack
+                                </td>
+                            </tr>
+                        </table>
+      
+        </div>    
+    </body>
+</html>

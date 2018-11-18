@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="logo/logo.jpg" />
+        <link rel="stylesheet" href="w3css/w3css.css" />
+        <link rel="stylesheet" href="bootstrap-3.3.7\dist\css\bootstrap.min.css" />
+        <link rel="stylesheet" href="icons/font-awesome-4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="../w3css/w3css.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script type="text/javascript" src="bootstrap-3.3.7\dist\js\bootstrap.min.js" ></script>
+    </head>
+    <body>
+      <nav class="navbar navbar-inverse vs w3-top " data-spy="affix" >
+            <ul class="w3-navbar w3-deep-orange w3-border" style="height: 55px;">
+                <li><a href="../index.jsp"  class="w3-hover-deep-orange"><img src="../logo/logo10-12.png" width="80px;" height="35px" /></a></li>
+                <li style="width:40%; margin-top:.5%;margin-left: 3%;">   <input type="text" class="w3-input w3-orange w3-padding-6 w3-hide-small" placeholder="Search.."  style="width:100%;"></li>
+                <li style="margin-top:.5%;"><button class="w3-btn w3-black w3-padding-6 w3-hover-orange w3-hide-small" style="color:#fff; height:37px;">Search</button></li>
+                <li style="margin-top:.2%;"><a href="../JSP/cart.jsp"  style="position:relative; z-index:3;" class="w3-text-white w3-hover-deep-orange w3-hide-small">bascket<img src="../trolly/bs.png" class="" width="35px"/><span class="w3-badge w3-small w3-orange" style="z-index:2; position:absolute; margin-left:-18%; margin-top:.2%;"><%=session.getAttribute("count") %></span></a></li>
+                <li id="mr" style="margin-top:.3%;">
+                <%--<a class="w3-hide-small w3-hover-deep-orange" style="cursor:pointer;">
+                <%-- <i class="material-icons w3-padding-6 w3-hide-small" style="color:#000; font-size:15px;"  onclick="document.getElementById('log').style.display='block'" ><img src="icons/log.png" width="20px" weight="20px" /><%=session.getAttribute("cname")%></i></a>--%>
+                    <div class="w3-container">
+                        <div class="w3-dropdown-hover w3-deep-orange">
+                            <div class="w3-deep-orange" style="margin-top:3px;"><i class="material-icons" style="font-size: 40px;">account_circle</i></div>
+                        </div>
+                    </div>
+                </li>
+                <!--login or sinup form-->
+                <div id="log" class="w3-modal" >
+                <div class="w3-modal-content w3-card-8 w3-animate-top" style="max-width:550px">
+                <span onclick="document.getElementById('log').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-8 w3-display-topright" title="Close Modal">&times;</span>
+                <form class="w3-container" action="">
+                <div class="w3-section">
+                <label style="color:#000;"><b>Phone Number</b></label>
+                <input class="w3-input  w3-margin-bottom" type="text" placeholder="Enter Phone Number" pattern="[0-9]{10}" style="color:#666666;" name="usrname" required>
+		<button onclick="" class="w3-deep-orange w3-border-0  w3-padding w3-margin-bottom">Get O T P</button><br />
+                <label style="color:#000;"><b>Verify OT P</b></label>
+                <input class="w3-input" type="text" placeholder="Enter O T P" name="psw" style="color:#666666;" pattern="[0-9]{5}" required>
+                <input class="w3-check" type="checkbox" checked="checked" ><label style="color:#000000"> Agreed Terms & Condition</label>
+                </div>
+                </form>
+                <form class="w3-container" action="">
+                <input type="text" class="w3-input" placeholder="Enter Phone Number or email" style="color:#000;" required /><br>
+                <input type="password" class="w3-input w3-margin-bottom" placeholder="Enter Password" style="color:#000;" required />
+                <button class="w3-btn-block w3-deep-orange w3-section w3-padding" type="submit">Login</button>
+                </form>
+                <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                <button onclick="document.getElementById('log').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+                <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#" style="color:#000000;">password</a></span>
+                </div>
+                </div>
+                </div>
+                <li id="mr" style="margin-top:-.1%;"><a href="#" class="w3-hide-small w3-hover-deep-orange"><div class="material-icons w3-hide-small" style="font-size:24px;color:#ffffff; margin-top:4%;">call</div><span style="font-size:1.5em; color:#fff;">+91 9861766666</span></a></li>
+            </ul>
+        </nav>
+        <table border="0px" style="border:none; background-color: transparent;" >
+                                <tr style="height:2px;">
+                                    <td style="padding: 0; margin: 0;">
+                                        Pincode
+                                    </td>
+                                    <td  style="padding: 1; margin: 2;">
+                                        <input type="text"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Name
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Address
+                                    </td>
+                                    <td>
+                                        <textarea rows="5" cols="35">
+                                        </textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Locality/Landmark
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        City
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        State
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mobile Number
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input class="w3-check" type="checkbox" checked="checked" >
+                                        <label style="color:#000000"> Same as alternate number</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Alternate Number
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="w3-center">
+                                        <input type="submit" value="Save and Continue" align="center" class="w3-button w3-xlarge w3-green" />
+                                    </td>
+                                </tr>
+        </table>
+    </body>
+</html>

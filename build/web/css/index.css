@@ -1,0 +1,124 @@
+/* 
+    Document   : index
+    Created on : Mar 26, 2017, 4:55:24 PM
+    Author     : Handshakeyou
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body {
+      position: relative; 
+     
+  }
+  .drpd{
+  background-color:ff6600;
+  color:#ffffff;
+  cursor:pointer;
+  margin-top:1%;
+  }
+  .affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px;
+  }
+
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  }
+  .vs { 
+  background-color:#fff;
+  border:none;
+  }
+  #vg{
+  background-color:#ff6600;
+  color:#ffffff;
+  cursor:pointer;
+  }
+ .sv{
+width:30px;
+background-color:fff;
+  }
+  #sc {    
+  	width:100%;
+	font-size:10px;
+    box-sizing: border-box;
+    border: 2px solid yellow;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #ff6600;
+    background-image:url('search.png');
+    background-position: 10px 0px; 
+    background-repeat: no-repeat;
+	margin:8px 0px 0px 0px;
+    padding: 5px 20px 5px 70px;
+-webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	}
+	#scr:focus
+	{
+	background-color:#fff;
+	}
+	#sc:focus {
+	border: 2px solid yellow;
+	margin:8px 0px 0px 0px;
+    border-radius: 4px;
+	padding: 5px 20px 5px 70px;
+	background-color:#ffefd0;
+   	width: 100%;
+	color:#000066;
+	}
+button span:focus
+{
+background-color:#FF6600;
+}
+#cl:hover
+{
+background-color:white;
+}
+#l
+{
+width:500px;
+}
+/*image slider*/
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  #ht
+  {
+  height:250px;
+  }
+  .mr{
+  cursor:pointer;
+  }
+  .l
+  {
+  background-color:ff6600;
+  color:#fff;
+  }
+  .l:hover
+  {
+  background-color:ff6600;
+  color:#fff;
+  }
+  .imgprd{
+      height:100px;
+      width:100px;
+      
+  }
+  .bigimg
+  {
+  height: 500px;
+  width: 500px;
+  }
+  .br{
+      border:0px;
+  }
